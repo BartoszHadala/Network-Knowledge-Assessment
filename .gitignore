@@ -1,0 +1,225 @@
+# ============================================================================
+# ProjetPS - Professional .gitignore
+# Network Programming Project (C/CMake)
+# ============================================================================
+
+# ============================================================================
+# Build Artifacts
+# ============================================================================
+# CMake build directory
+build/
+Build/
+cmake-build-*/
+
+# Compiled binaries
+*.out
+*.exe
+*.app
+server
+client
+test_*
+
+# Object files
+*.o
+*.obj
+*.lo
+*.slo
+
+# Libraries
+*.a
+*.la
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# ============================================================================
+# CMake Generated Files
+# ============================================================================
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+Makefile
+
+# ============================================================================
+# Documentation Generated Files
+# ============================================================================
+# Doxygen output
+html/
+latex/
+doc/html/
+doc/latex/
+*.dox
+
+# Generated PDFs and HTML
+doc/*.pdf
+doc/diagrams_output/*.pdf
+doc/diagrams_output/*.html
+!doc/protocol.md
+!doc/Zalozenia_Projektowe.md
+!doc/PROJECT_DOCUMENTATION.md
+
+# Man pages
+*.1
+*.2
+*.3
+
+# ============================================================================
+# IDE and Editor Files
+# ============================================================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+.history/
+
+# CLion / JetBrains
+.idea/
+cmake-build-*/
+*.iml
+
+# Eclipse CDT
+.cproject
+.project
+.settings/
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+Session.vim
+
+# Emacs
+\#*\#
+.\#*
+*~
+.DS_Store
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# OS Generated Files
+# ============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================================================
+# Debug and Profiling
+# ============================================================================
+# GDB
+.gdb_history
+gmon.out
+
+# Valgrind
+*.log
+vgcore.*
+massif.out.*
+callgrind.out.*
+
+# Core dumps
+core
+core.*
+
+# ============================================================================
+# Temporary and Log Files
+# ============================================================================
+*.log
+*.tmp
+*.temp
+*.bak
+*.cache
+
+# Test outputs
+test_output/
+testing/
+
+# ============================================================================
+# Package Management
+# ============================================================================
+# Conan
+conanfile.txt.user
+conanbuildinfo.*
+conaninfo.txt
+
+# vcpkg
+vcpkg_installed/
+
+# ============================================================================
+# Static Analysis
+# ============================================================================
+# Cppcheck
+cppcheck-build/
+*.cppcheck
+
+# Clang-tidy
+.clang-tidy
+compile_commands.json
+
+# Coverage
+*.gcda
+*.gcno
+*.gcov
+coverage/
+htmlcov/
+
+# ============================================================================
+# Project Specific
+# ============================================================================
+# Backup files from editors
+*_backup
+*.backup
+
+# Local configuration
+local.conf
+.env
+.env.local
+
+# Database files (if any)
+*.db
+*.sqlite
+*.sqlite3
+
+# Network dumps
+*.pcap
+*.pcapng
+
+# Certificates and keys (IMPORTANT!)
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+secrets/
+
+# ============================================================================
+# Dependencies (if vendored)
+# ============================================================================
+# External libraries
+lib/external/
+vendor/
+third_party/
+
+# ============================================================================
+# Custom Ignores for This Project
+# ============================================================================
+# Add project-specific patterns below:
+# examples/outputs/
+# custom_build/

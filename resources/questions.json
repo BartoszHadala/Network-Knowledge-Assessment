@@ -1,0 +1,189 @@
+[
+  {
+    "id": 1,
+    "pytanie": "W modelu RGB, w systemie szesnastkowym, kolor jest zapisany następująco: ABCDEF. Natężenie koloru niebieskiego w tym zapisie ma wartość dziesiętną",
+    "odpowiedzi": ["205", "171", "186", "239"],
+    "poprawna": 4
+  },
+  {
+    "id": 2,
+    "pytanie": "Toner jest materiałem eksploatacyjnym drukarki",
+    "odpowiedzi": ["sublimacyjnej", "igłowej", "atramentowej", "laserowej"],
+    "poprawna": 4
+  },
+  {
+    "id": 3,
+    "pytanie": "Co łączy okablowanie pionowe w projekcie sieci LAN?",
+    "odpowiedzi": ["Dwa sąsiednie punkty abonenckie", "Główny punkt rozdzielczy z pośrednimi punktami rozdzielczymi", "Gniazdo abonenckie z pośrednim punktem rozdzielczym", "Główny punkt rozdzielczy z gniazdem abonenckim"],
+    "poprawna": 2
+  },
+  {
+    "id": 4,
+    "pytanie": "Do zasilania najwydajniejszych kart graficznych wymagane jest dodatkowe 6-pinowe złącze zasilacza PCI-E, które doprowadza napięcia",
+    "odpowiedzi": ["+12 V na 3 liniach", "+3,3 V, +5 V, +12 V", "+5 V na 3 liniach", "+3,3 V oraz +5 V"],
+    "poprawna": 1
+  },
+  {
+    "id": 5,
+    "pytanie": "Skrót MAN oznacza sieć",
+    "odpowiedzi": ["miejską", "bezprzewodową", "rozległą", "lokalną"],
+    "poprawna": 1
+  },
+  {
+    "id": 6,
+    "pytanie": "W sieci o adresie 192.168.20.0 zastosowano maskę podsieci 255.255.255.248. Ile adresów IP będzie dostępnych dla urządzeń?",
+    "odpowiedzi": ["14", "510", "6", "1022"],
+    "poprawna": 3
+  },
+  {
+    "id": 7,
+    "pytanie": "Aby uzyskać przepustowość na poziomie 4 GB/s w każdą stronę, należy zamontować w zestawie komputerowym kartę graficzną wykorzystującą interfejs",
+    "odpowiedzi": ["PCI-Express x 8 wersja 1.0", "PCI-Express x 16 wersja 1.0", "PCI-Express x 1 wersja 3.0", "PCI-Express x 4 wersja 2.0"],
+    "poprawna": 2
+  },
+  {
+    "id": 8,
+    "pytanie": "Na który z nośników pamięci zewnętrznej, nie przedostanie się wirus podczas odczytywania jego zawartości?",
+    "odpowiedzi": ["na kartę SD", "na płytę DVD-ROM", "na pamięć Flash", "na dysk zewnętrzny"],
+    "poprawna": 2
+  },
+  {
+    "id": 9,
+    "pytanie": "W architekturze sieci lokalnych typu klient-serwer",
+    "odpowiedzi": ["każdy komputer zarówno udostępnia jak i korzysta z zasobów innych komputerów", "wyróżnione komputery pełnią rolę serwerów udostępniających zasoby, a pozostałe komputery z tych zasobów korzystają", "żaden z komputerów nie pełni roli nadrzędnej w stosunku do pozostałych", "wszystkie komputery klienckie mają dostęp do zasobów komputerowych"],
+    "poprawna": 2
+  },
+  {
+    "id": 10,
+    "pytanie": "Liczba szesnastkowa: FFFF w systemie dwójkowym ma postać",
+    "odpowiedzi": ["1111 1111 1111 1111", "1111 0000 0000 0111", "0010 0000 0000 0111", "0000 0000 0000 0000"],
+    "poprawna": 1
+  },
+  {
+    "id": 11,
+    "pytanie": "Który wymieniony protokół zapewnia korzystanie z szyfrowanego połączenia ze stroną internetową?",
+    "odpowiedzi": ["NetBEUI", "TCP", "SPX", "HTTPS"],
+    "poprawna": 4
+  },
+  {
+    "id": 12,
+    "pytanie": "Aby sprawdzić, który program najbardziej obciąża procesor w systemie Windows, należy uruchomić program:",
+    "odpowiedzi": ["dxdiag", "regedit", "menedżer zadań", "msconfig"],
+    "poprawna": 3
+  },
+  {
+    "id": 13,
+    "pytanie": "Który protokół warstwy aplikacji definiuje wysyłanie poczty elektronicznej?",
+    "odpowiedzi": ["DNS (Domain Name System)", "SMTP (Simple Mail Transfer Protocol)", "HTTP (Hypertext Transfer Protocol)", "FTP (File Transfer Protocol)"],
+    "poprawna": 2
+  },
+  {
+    "id": 14,
+    "pytanie": "Jaką rozdzielczość musi obsługiwać karta graficzna, aby oglądać na 23-calowym monitorze materiał video w trybie Full HD?",
+    "odpowiedzi": ["1920×1080", "2560×1440", "2048×1152", "1600×900"],
+    "poprawna": 1
+  },
+  {
+    "id": 15,
+    "pytanie": "W nowoczesnych ekranach dotykowych poprawność działania ekranu zapewnia mechanizm wykrywający zmianę",
+    "odpowiedzi": ["położenia ręki dotykającej ekran poprzez zastosowanie kamery", "pola elektromagnetycznego", "oporu między przezroczystymi diodami wtopionymi w ekran", "pola elektrostatycznego"],
+    "poprawna": 4
+  },
+  {
+    "id": 16,
+    "pytanie": "Licencją wolnego i otwartego oprogramowania jest",
+    "odpowiedzi": ["GNU GPL", "FREEWARE", "ADWARE", "BOX"],
+    "poprawna": 1
+  },
+  {
+    "id": 17,
+    "pytanie": "Jak nazywa się w systemie Windows profil użytkownika tworzony podczas pierwszego logowania do komputera i przechowywany na lokalnym dysku twardym komputera, a każda jego zmiana dotyczy jedynie komputera, na którym została wprowadzona?",
+    "odpowiedzi": ["Mobilny", "Obowiązkowy", "Lokalny", "Tymczasowy"],
+    "poprawna": 3
+  },
+  {
+    "id": 18,
+    "pytanie": "Instalując system operacyjny Linux należy skorzystać z systemu plików",
+    "odpowiedzi": ["NTFS 4", "NTFS 5", "ReiserFS", "FAT32"],
+    "poprawna": 3
+  },
+  {
+    "id": 19,
+    "pytanie": "Którym poleceniem w systemie Linux przypisuje się adres IP i maskę podsieci dla interfejsu eth0?",
+    "odpowiedzi": ["ifconfig eth0 172.16.31.1 netmask 255.255.0.0", "ipconfig eth0 172.16.31.1 netmask 255.255.0.0", "ipconfig eth0 172.16.31.1 mask 255.255.0.0", "ifconfig eth0 172.16.31.1 mask 255.255.0.0"],
+    "poprawna": 1
+  },
+  {
+    "id": 20,
+    "pytanie": "Jak nazywa się klucz rejestru systemu Windows, w którym są zapisane powiązania typów plików z obsługującymi je aplikacjami?",
+    "odpowiedzi": ["HKEY_CLASSES_ROOT", "HKEY_CURRENT_PROGS", "HKEY_USERS", "HKEY_LOCAL_RELATIONS"],
+    "poprawna": 1
+  },
+  {
+    "id": 21,
+    "pytanie": "Jakim poleceniem w systemie Linux, można zmienić prawa dostępu do pliku bądź katalogu?",
+    "odpowiedzi": ["chattrib", "attrib", "chmod", "iptables"],
+    "poprawna": 3
+  },
+  {
+    "id": 22,
+    "pytanie": "Które polecenie systemu z rodziny Windows pozwala sprawdzić, przechowywane w pamięci podręcznej komputera, zapamiętane tłumaczenia nazw DNS na adresy IP?",
+    "odpowiedzi": ["ipconfig /renew", "ipconfig /displaydns", "ipconfig /flushdns", "ipconfig /release"],
+    "poprawna": 2
+  },
+  {
+    "id": 23,
+    "pytanie": "Który protokół rutingu dynamicznego został zaprojektowany jako protokół bramy zewnętrznej służący do łączenia ze sobą różnych dostawców usług internetowych?",
+    "odpowiedzi": ["EIGRP", "BGP", "RIPng", "IS - IS"],
+    "poprawna": 2
+  },
+  {
+    "id": 24,
+    "pytanie": "Jest to najnowsza wersja klienta wieloplatformowego, cenionego przez użytkowników na całym świecie, serwera wirtualnej sieci prywatnej, pozwalającego na zestawienie pomiędzy hostem a komputerem lokalnym połączenia, obsługującego uwierzytelnianie z użyciem kluczy, jak również certyfikatów, nazwy użytkownika i hasła, a także, w wersji dla Windows, dodatkowych kart. Który z programów został opisany przed chwilą?",
+    "odpowiedzi": ["OpenVPN", "TinghtVNC", "Putty", "Ethereal"],
+    "poprawna": 1
+  },
+  {
+    "id": 25,
+    "pytanie": "Moc zasilacza wynosi 450 W, czyli",
+    "odpowiedzi": ["0,045 hW", "45 GW", "4,5 MW", "0,45 kW"],
+    "poprawna": 4
+  },
+  {
+    "id": 26,
+    "pytanie": "Równoważnym zapisem 2^32 bajtów jest zapis:",
+    "odpowiedzi": ["1 GiB", "2 GB", "4 GiB", "8 GB"],
+    "poprawna": 3
+  },
+  {
+    "id": 26,
+    "pytanie": "Pierwszą usługą instalowaną na serwerze jest usługa domenowa w usłudze Active Directory. Podczas instalacji kreator automatycznie wyświetli monit o konieczności zainstalowania usługi serwera",
+    "odpowiedzi": ["FTPL", "DHCP", "DNS", "WEB"],
+    "poprawna": 3
+  },
+  {
+    "id": 27,
+    "pytanie": "Złącze szeregowe na płycie głównej, służące do podłączania kart rozszerzeń o różnej, w zależności od wariantu, liczbie pinów nosi nazwę",
+    "odpowiedzi": ["AGP", "ISA", "PCI", "PCI Express"],
+    "poprawna": 4
+  },
+  {
+    "id": 28,
+    "pytanie": "Jaka jest maksymalna prędkość odczytu płyt CD-R w napędzie oznaczonym x48?",
+    "odpowiedzi": ["480 kB/s", "7200 kB/s", "4800 kB/s", "10000 kB/s"],
+    "poprawna": 2
+  },
+  {
+    "id": 29,
+    "pytanie": "Za pomocą którego protokołu należy wysłać pliki na serwer WWW?",
+    "odpowiedzi": ["DHCP", "FTP", "DNS", "POP3"],
+    "poprawna": 2
+  },
+  {
+    "id": 30,
+    "pytanie": "W kodzie HTML zapisano w bloku tekst formatowany pewnym stylem. Aby wtrącić wewnątrz tekstu kilka słów formatowanych innym stylem, należy zastosować znacznik",
+    "odpowiedzi": ["<table>", "<span>", "<hr>", "<section>"],
+    "poprawna": 2
+  }
+
+]

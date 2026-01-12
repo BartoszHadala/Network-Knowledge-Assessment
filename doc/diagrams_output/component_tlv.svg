@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="103px" preserveAspectRatio="none" style="width:235px;height:103px;background:#000000;" version="1.1" viewBox="0 0 235 103" width="235px" zoomAndPan="magnify"><defs/><g><rect fill="#0D0F19" height="1" style="stroke: #0D0F19; stroke-width: 1.0;" width="1" x="0" y="0"/><rect fill="#33FF02" height="24.0679" style="stroke: #33FF02; stroke-width: 1.0;" width="229" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="227" x="6" y="20">[From diagrams.puml (line 520) ]</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="9" y="43.0679"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="181" x="5" y="62.1358">@startuml component_tlv</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="87" x="5" y="81.2038">!theme plain</text><text fill="#FF0000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="93" x="9" y="100.2717">Syntax Error?</text><!--MD5=[dc3483a265428fe19a30140394a64e74]
+@startuml component_tlv
+!theme plain
+title Component Diagram - TLV Protocol
+
+package "TLV Protocol Layer" {
+    component "TLV Header Parser" as parser {
+        [Extract Type]
+        [Extract Length]
+        [Validate Format]
+    }
+    
+    component "TLV Message Creators" as creators {
+        [Login Messages]
+        [Question Messages]
+        [Answer Messages]
+        [Score Messages]
+        [Ranking Messages]
+        [Server Info Messages]
+    }
+    
+    component "TLV Message Parsers" as parsers {
+        [Parse Login]
+        [Parse Question]
+        [Parse Answer]
+        [Parse Score]
+        [Parse Ranking]
+        [Parse Server Info]
+    }
+    
+    component "Byte Order Converter" as converter {
+        [htons/ntohs]
+        [htonl/ntohl]
+    }
+}
+
+package "Application Layer" {
+    component "Client App" as client
+    component "Server App" as server
+}
+
+package "Transport Layer" {
+    component "TCP Socket" as socket
+}
+
+client - -> creators : Create messages
+client - -> parsers : Parse responses
+server - -> parsers : Parse requests
+server - -> creators : Create responses
+
+creators - -> converter : Convert to network byte order
+parsers - -> converter : Convert from network byte order
+
+creators - -> socket : send()
+socket - -> parsers : recv()
+parser - -> parsers : Header extraction
+
+note right of converter
+  All multi-byte integers
+  use network byte order
+  (big-endian)
+end note
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 11:22:07 CET 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.9+10-Ubuntu-124.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: pl
+Country: PL
+--></g></svg>

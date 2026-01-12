@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="103px" preserveAspectRatio="none" style="width:219px;height:103px;background:#000000;" version="1.1" viewBox="0 0 219 103" width="219px" zoomAndPan="magnify"><defs/><g><rect fill="#152116" height="1" style="stroke: #152116; stroke-width: 1.0;" width="1" x="0" y="0"/><rect fill="#33FF02" height="24.0679" style="stroke: #33FF02; stroke-width: 1.0;" width="213" x="5" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="211" x="6" y="20">[From diagrams.puml (line 2) ]</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="9" y="43.0679"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="161" x="5" y="62.1358">@startuml architecture</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="87" x="5" y="81.2038">!theme plain</text><text fill="#FF0000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="93" x="9" y="100.2717">Syntax Error?</text><!--MD5=[e56db53634f9cf0edb2048396a98f32d]
+@startuml architecture
+!theme plain
+title System Architecture - Network Knowledge Test
+
+package "Client Side" {
+    [Client Application] as client
+    [Menu UI] as menu
+    [TLV Client] as tlv_c
+    [Display Utils] as display
+}
+
+package "Network" {
+    [TCP/IPv6 Socket] as socket
+    [Multicast Discovery] as discovery
+}
+
+package "Server Side (Daemon)" {
+    [Server Main] as server
+    [Epoll Event Loop] as epoll
+    [TLV Server] as tlv_s
+    [Server Utils] as sutils
+    [Quiz Engine] as quiz
+    [Rankings Manager] as rankings
+    [Statistics Collector] as stats
+}
+
+package "Storage" {
+    database "questions.json" as qdb
+    file "syslog" as log
+}
+
+client - -> menu
+menu - -> tlv_c
+tlv_c - -> display
+tlv_c - -> socket
+
+socket <- -> tlv_s
+discovery - -> socket
+
+server - -> epoll
+epoll - -> tlv_s
+tlv_s - -> sutils
+tlv_s - -> quiz
+tlv_s - -> rankings
+tlv_s - -> stats
+
+quiz - -> qdb
+server - -> log
+
+note right of server
+  Unix Daemon
+  - Double fork
+  - setsid()
+  - syslog logging
+end note
+
+note right of epoll
+  Event-driven I/O
+  - Non-blocking sockets
+  - Edge-triggered mode
+  - Up to 2000 connections
+end note
+
+@enduml
+
+PlantUML version 1.2020.02(Sun Mar 01 11:22:07 CET 2020)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 21.0.9+10-Ubuntu-124.04
+Operating System: Linux
+Default Encoding: UTF-8
+Language: pl
+Country: PL
+--></g></svg>
